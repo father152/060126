@@ -8,7 +8,7 @@
 
    
 }
-.home img{
+.home girl img{
     width: 50%;
     height: auto;
     position: absolute;
@@ -21,10 +21,23 @@ h1{
     font-size: 120px;
     display: flex;
     position: absolute;
-    right: 25%;
+    right: 22%;
     top: 0%;
     z-index: 10;
     padding: 0;
     margin: 0;
     font-weight: 100;
+}
+.home p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  rgb(126, 124, 124);
+    font-size: 40px;
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    width: 80%;
+    z-index: 10;
+    font-family: Shadows Into Light, cursive;
+    font-weight: 800;
 }
