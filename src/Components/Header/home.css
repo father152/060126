@@ -1,22 +1,21 @@
-.home{
+.home {
     width: 100%;
-    height:200vh;
-   background-color: black;
+    height: 200vh;
     margin: auto;
     display: flex;
     position: relative;
-
-   
 }
-.home girl img{
-    width: 50%;
+.home girl img {
+    width:50%;
     height: auto;
     position: absolute;
     left: 0px;
     top: 0%;
 }
-h1{
-    font-family: Shadows Into Light, cursive;
+h1 {
+    font-family:
+        Shadows Into Light,
+        cursive;
     color: rgb(126, 124, 124);
     font-size: 120px;
     display: flex;
@@ -28,9 +27,9 @@ h1{
     margin: 0;
     font-weight: 100;
 }
-.home p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:  rgb(126, 124, 124);
+.home p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(126, 124, 124);
     font-size: 40px;
     display: flex;
     position: absolute;
@@ -38,6 +37,10 @@ h1{
     top: 15%;
     width: 80%;
     z-index: 10;
-    font-family: Shadows Into Light, cursive;
+    font-family:
+        Shadows Into Light,
+        cursive;
     font-weight: 800;
+    text-align: justify;
+    line-height: 1.5;
 }

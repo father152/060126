@@ -2,7 +2,7 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Header/Home";
-
+import About from "./Components/Header/About/About";
 
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
           index: true,
           element: <Home />,
         },
-      //   {
-      //     path: "/about",
-      //     element: <About />,
-      //   },
+        {
+          path: "/about",
+          element: <About />,
+        },
        
       ],
     },
