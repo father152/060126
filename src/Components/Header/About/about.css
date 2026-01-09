@@ -1,11 +1,85 @@
+.about {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
 
-
-
+.about h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-family:
+        Shadows Into Light,
+        cursive;
+    color: rgb(15, 0, 0);
+    font-size: 120px;
+    display: flex;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 50px;
+    text-shadow: 0px 0px 50px rgb(252, 251, 251);
+}
 
 .back img {
-    width: 60px;
+    width: 40px;
     margin: 20px;
+    padding: 5px;
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(108, 109, 110);
     border-radius: 50%;
+}
+.about-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    color: rgb(176, 177, 179);
+}
+
+.about-left,
+.about-centre,
+.about-right {
+    width: 28%;
+    padding: 20px;
+    border: 0.5px solid rgb(110, 109, 109);
+}
+h3 {
+    font-family:
+        Shadows Into Light,
+        cursive;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+/* .about-left img{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.about-left img:hover{
+     content: url("../../Image/pexels-george-desipris-9751898.jpg")
+} */
+.img-wrap {
+    position: relative;
+    width: 300px;
+}
+
+.img {
+    width: 100%;
+    display: block;
+}
+
+.img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2s ease; 
+}
+
+.img-wrap:hover .img-hover {
+    opacity: 1;
 }
