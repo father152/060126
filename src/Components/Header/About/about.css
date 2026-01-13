@@ -11,13 +11,14 @@
     font-family:
         Shadows Into Light,
         cursive;
-    color: rgb(15, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: 120px;
     display: flex;
     font-weight: 100;
     margin: 0;
     padding-top: 50px;
-    text-shadow: 0px 0px 50px rgb(252, 251, 251);
+    text-shadow: 5px 5px 50px rgb(241, 232, 93);
+    
 }
 
 .back img {
@@ -62,6 +63,7 @@ h3 {
 .about-left img:hover{
      content: url("../../Image/pexels-george-desipris-9751898.jpg")
 } */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .img-wrap {
     position: relative;
     width: 300px;
@@ -71,17 +73,31 @@ h3 {
 
 .img {
     width: 100%;
-    display: block;
+    display: flex;
 }
-
 .img-hover {
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
     opacity: 0;
-    transition: opacity 2s ease; 
+    transition: opacity 2s ease;
+    font-size: 20px;
+    font-family:
+        Shadows Into Light,
+        cursive;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6%;
 }
 
 .img-wrap:hover .img-hover {
     opacity: 1;
+    transition: opacity 2s ease;
 }
+.img-wrap:hover .img-main {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
