@@ -1,0 +1,19 @@
+.contact{
+    width: 100%;
+}
+.contact h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-family:
+        Shadows Into Light,
+        cursive;
+    color: rgb(117, 122, 43);
+    font-size: 120px;
+    display: flex;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 50px;
+    text-shadow: 5px 5px 50px rgb(255, 255, 253);
+}

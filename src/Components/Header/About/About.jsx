@@ -80,7 +80,7 @@ export default function About() {
               ipsum dolor sit amet consectetur adipiscing elit. Quisqueipsum
               dolor sit amet consectetur adipiscing elit</p>
       </div>
-      <div className="next-1">
+      <div className="next-2">
         <h2>NEXT 2</h2>
         <p>Next content goes herefaucibus ex sapien vitae pellentesque sem placerat. In id cursus
               mi pretium tellus duis convallis. Tempus leo eu aenean sed diam

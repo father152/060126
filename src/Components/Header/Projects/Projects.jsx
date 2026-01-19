@@ -1,6 +1,7 @@
 import React from 'react'
 import "./projects.css"
-
+import { Link } from "react-router-dom";
+import home from "../../Image/home.png";  
 
 
 export default function Projects() {
@@ -11,7 +12,11 @@ export default function Projects() {
 
     
 </div>
-
+<div className="back">
+        <Link to="/">
+          <img src={home} alt=""></img>
+        </Link>
+      </div>
         </div>
   )
 }

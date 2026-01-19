@@ -4,6 +4,8 @@ import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Header/Home";
 import About from "./Components/Header/About/About";
 import Projects from "./Components/Header/Projects/Projects";
+import Photo from "./Components/Header/Photo/Photo";
+import Contact from "./Components/Header/Contact/Contact";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,6 +24,14 @@ function App() {
        {
           path: "/projects",
           element: <Projects />,
+        },
+        {
+          path: "/photo",
+          element: <Photo />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
         },
       ],
     },

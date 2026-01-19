@@ -1,0 +1,36 @@
+.photo{
+    width: 100%;
+   
+}  
+.photo h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-family:
+        Shadows Into Light,
+        cursive;
+    color: rgb(117, 122, 43);
+    font-size: 120px;
+    display: flex;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 50px;
+    text-shadow: 5px 5px 50px rgb(255, 255, 253);
+}
+.photo-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    height: 175vh   ;
+    background-color: rgb(58, 51, 51);
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.photo-container img{
+    width: 60%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+    opacity: 1;
+}

@@ -108,7 +108,7 @@ h3 {
     height: auto;
     background-image: repeating-linear-gradient(black 0, black 5px, rgb(156, 156, 155) 100px, orange 50px);
 }
-.next-1 p {
+.next-1 p, .next-2 p {
     display: flex;
     width: 90%;
     margin: 0 auto;
@@ -118,4 +118,9 @@ h3 {
         Shadows Into Light,
         cursive;
     padding-top: 30px;
+}
+.next-2 {
+    width: 100%;
+    height: auto;
+    background-color: black;
 }
