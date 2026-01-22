@@ -58,6 +58,8 @@
  .personal-card img{
     width: 15%;
     border-radius: 50%;
+   border: 8px solid rgb(77, 78, 78);
+    margin-right: 30px;
    
  }
  .personal-card p{
