@@ -17,7 +17,7 @@
     margin-right: 20px;
     transition: all 1.5s ease-in-out;
 }
-.projectscard img:hover{
+.projectscard img:active{
     transform: scale(1.8) translate(40%);
     transition: all 1.5s ease-in-out;
     border: 5px solid rgb(255, 255, 255);
@@ -32,4 +32,22 @@
     font-family: Arial, sans-serif;
     text-align: justify;
     padding: 0 20px;
+}
+.projectscard .picture button{
+    background-color: #2a2a2b;
+    color: rgb(184, 183, 183);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    width: 90%;
+    margin-left: 2.5%;
+}
+.projectscard .picture button:hover{
+    background-color: #b3b2b2;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    color: rgb(41, 41, 41);
 }

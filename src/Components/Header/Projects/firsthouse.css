@@ -1,0 +1,42 @@
+.firsthouse {
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+
+    padding: 20px;
+    background-color: #3b3b3b;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.firsthouse h2 {
+    text-align: center;
+    color: #dad9d9;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+.backtopreviouspage img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+.firsthouse-container {
+    display: flex; /* Включаем Flexbox */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+    gap: 20px; /* Расстояние между фото */
+    justify-content: center; /* Центрируем фото в ряду */
+}
+.firsthouse-container img {
+    width: 350px; /* Ширина каждого фото */
+    height: 200px; /* Высота каждого фото */
+    object-fit: cover; /* Обрезаем фото, чтобы заполнить контейнер */
+    border-radius: 8px;
+    cursor: pointer;
+}
+.firsthouse-container img:hover  {
+    transform: scale(1.5);
+    transition: all 1s ease-in-out;
+}

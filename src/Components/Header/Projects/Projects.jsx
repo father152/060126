@@ -7,6 +7,7 @@ import house1 from "../../Image/img215_34309_1170s1.jpg";
 import house2 from "../../Image/img244_34234_1170s1.jpg";
 import house3 from "../../Image/img2808_40016_1170s1.jpg";
 
+
 export default function Projects() {
   return (
     <div className="projects">
@@ -15,6 +16,7 @@ export default function Projects() {
         <Projectscard
           image={house1}
           alt="Project 1"
+          Link to="/firsthouse"
           description="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
           faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
           pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
@@ -33,6 +35,7 @@ export default function Projects() {
         <Projectscard
           image={house2}
           alt="Project 2"
+          Link to="/secondhouse"
           description="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
           faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
           pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
