@@ -16,3 +16,45 @@
     margin-bottom: 20px;
     font-family: Arial, sans-serif;
 }
+.area-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+.area-calculator h2{
+    font-size: 30px;
+}
+.room{
+    margin: 15px 0;
+    font-size: 20px;
+}
+input{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 25px;
+}
+.button-room{
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    background-color: #696969;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 0 20px 0;
+}
+.button-room:hover{
+    background-color: #505050;
+    transition: all 0.3s ease-in-out;
+}
+.area-calculator h3{
+    font-size: 35px;
+    margin: 20px 0;
+}
