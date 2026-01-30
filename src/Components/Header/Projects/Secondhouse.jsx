@@ -4,19 +4,17 @@ import { Link } from "react-router-dom";
 import back from "../../Image/free-icon-back-3183312.png";
 import { useState } from "react";
 
-
-
 export default function Secondhouse() {
- const [rooms, setRooms] = useState([
-    { id: 1, name: "Кімната 1", length: "", width: "" }
+  const [rooms, setRooms] = useState([
+    { id: 1, name: "Кімната 1", length: "", width: "" },
   ]);
 
   // оновлення значень
   const handleChange = (id, field, value) => {
     setRooms(
       rooms.map((room) =>
-        room.id === id ? { ...room, [field]: value } : room
-      )
+        room.id === id ? { ...room, [field]: value } : room,
+      ),
     );
   };
 
@@ -28,8 +26,8 @@ export default function Secondhouse() {
         id: Date.now(),
         name: `Кімната ${rooms.length + 1}`,
         length: "",
-        width: ""
-      }
+        width: "",
+      },
     ]);
   };
 
@@ -42,54 +40,83 @@ export default function Secondhouse() {
   };
 
   // загальна площа
-  const totalArea = rooms.reduce(
-    (sum, room) => sum + calcRoomArea(room),
-    0
-  );
+  const totalArea = rooms.reduce((sum, room) => sum + calcRoomArea(room), 0);
+
+  // вартість квартири (будинку)
+  const [pricePerSquareMeter, setPricePerSquareMeter] = useState("");
+
+  const totalPrice = totalArea * Number(pricePerSquareMeter || 0);
+
   return (
     <div className="secondhouse">
       <h2>Second House</h2>
       <div className="secondhouse-container">
-      
         <div className="area-calculator">
-      <h2>Розрахунок площі квартири (будинку)</h2>
+          <h2>Розрахунок площі квартири (будинку)</h2>
 
-      {rooms.map((room) => (
-        <div key={room.id} className="room" >
-          <strong>{room.name}</strong><br />
+          {rooms.map((room) => (
+            <div key={room.id} className="room">
+              <strong>{room.name}</strong>
+              <br />
+              Довжина (м):
+              <input
+                type="number"
+                value={room.length}
+                onChange={(e) =>
+                  handleChange(room.id, "length", e.target.value)
+                }
+              />
+              Ширина (м):
+              <input
+                type="number"
+                value={room.width}
+                onChange={(e) => handleChange(room.id, "width", e.target.value)}
+              />
+              Площа:{" "}
+              <input
+                type="number"
+                value={calcRoomArea(room).toFixed(2)}
+                readOnly
+              />{" "}
+              м²
+            </div>
+          ))}
 
-          Довжина (м):
-          <input
-            type="number"
-            value={room.length}
-            onChange={(e) =>
-              handleChange(room.id, "length", e.target.value)
-            }
-            
-          />
+          <button className="button-room" onClick={addRoom}>
+            ➕ Додати кімнату
+          </button>
 
-          Ширина (м):
-          <input
-            type="number"
-            value={room.width}
-            onChange={(e) =>
-              handleChange(room.id, "width", e.target.value)
-            }
-            style={{ margin: "0 10px" }}
-          />
+          <h3>
+            Загальна площа:
+            <input
+              className="areaflat"
+              type="number"
+              value={totalArea.toFixed(2)}
+              readOnly
+            />{" "}
+            м²
+          </h3>
 
-          Площа: <input
-            type="number"
-            value={calcRoomArea(room).toFixed(2)}
-            readOnly
-          /> м²
+          <h3>
+            Вартість 1 м² :
+            <input
+              type="number"
+              value={pricePerSquareMeter}
+              onChange={(e) => setPricePerSquareMeter(e.target.value)}
+              min="0"
+            /> (грн)
+          </h3>
+          <h3>
+            Вартість квартири (будинку):
+            <input
+              className="priceflat"
+              type="number"
+              value={totalPrice.toFixed(2)}
+              readOnly
+            />{" "}
+            грн
+          </h3>
         </div>
-      ))}
-
-      <button className="button-room" onClick={addRoom}>➕ Додати кімнату</button>
-
-      <h3>Загальна площа: {totalArea.toFixed(2)} м²</h3>
-    </div>
       </div>
 
       <div className="backtopreviouspage">

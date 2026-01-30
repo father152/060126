@@ -6,13 +6,15 @@
     flex-direction: column;
 
     padding: 20px;
-    background-color: #3b3b3b;
+    background-image: url(../../Image/depositphotos_12841973-stock-photo-blueprint-of-a-house.jpg);
+    background-size: cover;
+    background-position: center;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .secondhouse h2 {
     text-align: center;
-    color: #dad9d9;
+    color: #4b4a4a;
     margin-bottom: 20px;
     font-family: Arial, sans-serif;
 }
@@ -21,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
+    color: #2f2f2f;
 }
 .area-calculator h2{
     font-size: 30px;
@@ -34,21 +36,21 @@ input{
     width: 100px;
     height: 30px;
     font-size: 20px;
-    
     border-radius: 5px;
-    border: 1px solid #ccc;
-    margin: 0 25px;
+    border: 1px solid #020202;
+    margin: 10px 20px;
 }
 .button-room{
-    width: 250px;
-    height: 50px;
-    font-size: 25px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
     background-color: #696969;
-    color: white;
+    color: rgb(216, 215, 215);
     border: none;
     border-radius: 10px;
     cursor: pointer;
     margin: 20px 0 20px 0;
+   
 }
 .button-room:hover{
     background-color: #505050;
@@ -57,4 +59,19 @@ input{
 .area-calculator h3{
     font-size: 35px;
     margin: 20px 0;
+    color: #2f2f2f;
+    font-family: Arial, sans-serif;
+}
+.areaflat{
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #020202;
+    font-weight: 600;
+    color: rgb(83, 79, 68);
+}
+.priceflat{
+    width: 150px;
 }
