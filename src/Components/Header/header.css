@@ -19,11 +19,11 @@
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
-    color: rgb(156, 160, 107);
+    color: rgb(148, 151, 118);
     cursor: pointer;
     text-shadow:0px 0px 5px rgb(255, 255, 255);
 }
 .header-list li a:hover {
-    color: rgb(75, 66, 66);
+    color: rgb(240, 236, 11);
     transition: 0.5s;
 }

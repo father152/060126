@@ -64,9 +64,8 @@ export default function Secondhouse() {
                 value={room.length}
                 onChange={(e) =>
                   handleChange(room.id, "length", e.target.value)
-                }
-              />
-              Ширина (м):
+                } />
+             Ширина (м):
               <input
                 type="number"
                 value={room.width}
@@ -81,7 +80,6 @@ export default function Secondhouse() {
               м²
             </div>
           ))}
-
           <button className="button-room" onClick={addRoom}>
             ➕ Додати кімнату
           </button>
@@ -104,7 +102,8 @@ export default function Secondhouse() {
               value={pricePerSquareMeter}
               onChange={(e) => setPricePerSquareMeter(e.target.value)}
               min="0"
-            /> (грн)
+            />{" "}
+            (грн)
           </h3>
           <h3>
             Вартість квартири (будинку):

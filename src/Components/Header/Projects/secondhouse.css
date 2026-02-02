@@ -4,7 +4,6 @@
     width: 100%;
     margin: 0 auto;
     flex-direction: column;
-
     padding: 20px;
     background-image: url(../../Image/depositphotos_12841973-stock-photo-blueprint-of-a-house.jpg);
     background-size: cover;
@@ -25,22 +24,22 @@
     width: 100%;
     color: #2f2f2f;
 }
-.area-calculator h2{
+.area-calculator h2 {
     font-size: 30px;
 }
-.room{
+.room {
     margin: 15px 0;
     font-size: 20px;
 }
-input{
+input {
     width: 100px;
     height: 30px;
     font-size: 20px;
     border-radius: 5px;
     border: 1px solid #020202;
-    margin: 10px 20px;
+    margin: 5px 10px;
 }
-.button-room{
+.button-room {
     width: 200px;
     height: 40px;
     font-size: 20px;
@@ -50,19 +49,18 @@ input{
     border-radius: 10px;
     cursor: pointer;
     margin: 20px 0 20px 0;
-   
 }
-.button-room:hover{
+.button-room:hover {
     background-color: #505050;
     transition: all 0.3s ease-in-out;
 }
-.area-calculator h3{
+.area-calculator h3 {
     font-size: 35px;
     margin: 20px 0;
     color: #2f2f2f;
     font-family: Arial, sans-serif;
 }
-.areaflat{
+.areaflat {
     width: 100px;
     height: 40px;
     font-size: 25px;
@@ -72,6 +70,6 @@ input{
     font-weight: 600;
     color: rgb(83, 79, 68);
 }
-.priceflat{
+.priceflat {
     width: 150px;
 }
