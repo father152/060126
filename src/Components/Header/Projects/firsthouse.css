@@ -40,3 +40,10 @@
     transform: scale(1.5);
     transition: all 1s ease-in-out;
 }
+.colo{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    
+}
