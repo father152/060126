@@ -8,7 +8,7 @@ import Photo from "./Components/Header/Photo/Photo";
 import Contact from "./Components/Header/Contact/Contact";
 import Firsthouse from "./Components/Header/Projects/Firsthouse";
 import Secondhouse from "./Components/Header/Projects/Secondhouse"; 
-
+import ScrollToTop from "./Components/ScrolToTop";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,9 +16,14 @@ function App() {
       path: "/",
       element: <Layout />,
       children: [
-        {
+        {           
           index: true,
-          element: <Home />,
+          element: (
+            <>
+              <ScrollToTop />
+              <Home />
+            </>
+          ),
         },
         {
           path: "/about",
@@ -47,6 +52,7 @@ function App() {
       ],
     },
   ]);
+  
   return (
     <>
       <div className="app">
