@@ -38,9 +38,9 @@ export default function Firsthouse() {
 
       <div className="colo" style={{ color, borderRadius }}>
         <p style={{ color }}>456786453</p>
-        <button onClick={changeColor}>Change Color</button>
-        <button onClick={changeborderRadius}>Border</button>
-         {/* <button onClick={() => { changeColor(); changeborderRadius(); }}>Change Color</button> */}
+        {/* <button onClick={changeColor}>Change Color</button>
+        <button onClick={changeborderRadius}>Border</button> */}
+         <button onClick={() => { changeColor(); changeborderRadius(); }}>Change</button>
       </div>
 
       <div className="backtopreviouspage">

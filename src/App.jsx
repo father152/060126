@@ -7,8 +7,8 @@ import Projects from "./Components/Header/Projects/Projects";
 import Photo from "./Components/Header/Photo/Photo";
 import Contact from "./Components/Header/Contact/Contact";
 import Firsthouse from "./Components/Header/Projects/Firsthouse";
-import Secondhouse from "./Components/Header/Projects/Secondhouse"; 
-import ScrollToTop from "./Components/ScrolToTop";
+import Secondhouse from "./Components/Header/Projects/Secondhouse";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,7 +16,7 @@ function App() {
       path: "/",
       element: <Layout />,
       children: [
-        {           
+        {
           index: true,
           element: (
             <>
@@ -29,11 +29,15 @@ function App() {
           path: "/about",
           element: <About />,
         },
-       {
-          path: "/projects",
-          element: <Projects />,
-        },
         {
+          path: "/projects",
+          element: (
+            <>
+              <ScrollToTop />
+              <Projects />
+            </>
+          ),
+        },        {
           path: "/photo",
           element: <Photo />,
         },
@@ -43,21 +47,31 @@ function App() {
         },
         {
           path: "/firsthouse",
-          element: <Firsthouse />,
+          element: (
+            <>
+              <ScrollToTop />
+              <Firsthouse />
+            </>
+          )
         },
         {
           path: "/secondhouse",
-          element: <Secondhouse />,
+          element: (
+            <>
+              <ScrollToTop />
+              <Secondhouse />
+            </>
+          ) 
         },
       ],
     },
   ]);
-  
+
   return (
     <>
       <div className="app">
-      <RouterProvider router={router} />
-        </div>
+        <RouterProvider router={router} />
+      </div>
     </>
   );
 }

@@ -4,6 +4,8 @@ import "./about.css";
 import girl3 from "../../Image/pexels-george-desipris-818261.jpg";
 import girl4 from "../../Image/pexels-george-desipris-9751898.jpg";
 import girl5 from "../../Image/pexels-george-desipris-1709024.jpg";
+import up from "../../Image/free-icon-drop-down-menu-3151495.png";
+
 
 export default function About() {
   return (
@@ -103,6 +105,9 @@ export default function About() {
           <img src={home} alt=""></img>
         </Link>
       </div>
+
+
+      <div className="up" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}> <img className="up-img" src={up} alt=""></img></div>
     </div>
   );
 }
