@@ -4,7 +4,7 @@ import girl from "../Image/7b4a6cb68f99340c5073c6ec1c4e9dca.jpg";
 import girl1 from "../Image/7858d44b402eff7aad9e5c34f8e77605.jpg";
 import girl2 from "../Image/b82e171512b51e24a23bb9d0cebfe8ca.jpg";
 import up from "../Image/free-icon-drop-down-menu-3151495.png";
-import ScrollToTop from "../ScrollToTop";
+
 
 export default function Home() {
   return (
@@ -66,15 +66,7 @@ export default function Home() {
         </h5>
       </div>
 
-<div className="up" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}> <img className="up-img" src={up} alt=""></img></div>
-
-   
-
-
-       
-      
-      
-
+      <div className="up" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><img className="up-img" src={up} alt=""></img></div>
 
     </div>
   );

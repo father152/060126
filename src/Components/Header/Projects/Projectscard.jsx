@@ -8,7 +8,7 @@ export default function Projectscard(props) {
     <div className="projectscard">
       <div className="picture">
         <img src={props.image} alt={props.alt}></img>
-        <Link to={props.to}> <button>More information</button></Link>
+        <Link to={props.to}> <button>{props.title}</button></Link>
       </div>
      
       <div className="discription">

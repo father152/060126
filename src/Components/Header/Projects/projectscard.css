@@ -32,7 +32,9 @@
     font-family: Arial, sans-serif;
     text-align: justify;
     padding: 0 20px;
+    text-indent: 30px; /* Отступ первой строки 30 пикселей */
 }
+
 .projectscard .picture button{
     background-color: #2a2a2b;
     color: rgb(184, 183, 183);
