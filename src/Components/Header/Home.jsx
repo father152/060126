@@ -70,7 +70,10 @@ export default function Home() {
 <img src={next} alt="Next"></img>
  <h3>Our Sweet Building</h3>
 
+
 </div>
+
+
       <div className="up" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}><img className="up-img" src={up} alt=""></img></div>
 
     </div>

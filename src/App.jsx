@@ -9,6 +9,9 @@ import Contact from "./Components/Header/Contact/Contact";
 import Firsthouse from "./Components/Header/Projects/Firsthouse";
 import Secondhouse from "./Components/Header/Projects/Secondhouse";
 import ScrollToTop from "./Components/ScrollToTop";
+import Thirdhouse from "./Components/Header/Projects/Thirdhouse";
+
+
 
 function App() {
   const router = createBrowserRouter([
@@ -60,6 +63,15 @@ function App() {
             <>
               <ScrollToTop />
               <Secondhouse />
+            </>
+          ) 
+        },
+        {
+          path: "/thirdhouse",
+          element: (
+            <>
+              <ScrollToTop />
+              <Thirdhouse />
             </>
           ) 
         },

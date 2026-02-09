@@ -36,7 +36,7 @@ export default function Projects() {
         <Projectscard
           image={house2}
           alt="Project 2"
-           title="Second House"
+          title="Second House"
           Link to="/secondhouse"
           description="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
           faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
@@ -56,7 +56,8 @@ export default function Projects() {
         <Projectscard
           image={house3}
           alt="Project 3"
-           title="Third House"
+           Link to="/thirdhouse"
+          title="Third House"
           description="Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
           faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
           pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
