@@ -3,7 +3,8 @@ import "./thirdhouse.css";
 import { useState } from 'react';
 import english from "../../Image/free-icon-united-kingdom-555417.png";
 import ukraine from "../../Image/free-icon-ukraine-3373317.png";
-
+import { Link } from "react-router-dom";
+import back from "../../Image/free-icon-back-3183312.png";
 
 
 export default function Thirdhouse() {
@@ -36,10 +37,15 @@ export default function Thirdhouse() {
                     {language === "en" && <img src={ukraine} alt="UK flag" />}
                     {language === "ua" && <img src={english} alt="UA flag" />}
                 </button>
-
                 <h6>{text[language].title}</h6>
                 <p>{text[language].description}</p>
             </div>
+ <div className="backtopreviouspage">
+        <Link to="/projects">
+          <img src={back} alt=""></img>
+        </Link>
+      </div>
         </div>
-    )
+    ) 
+
 }
